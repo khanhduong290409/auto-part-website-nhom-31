@@ -1,0 +1,673 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+/* ================================================================== */
+
+/* Styling The Navigation Side */
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px 30px 25px;
+  box-shadow: 0 0 12px 0 #d8d8d8;
+}
+
+nav a.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-bottom: 35px;
+}
+
+nav a.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+nav a.logo h3 {
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 170px;
+}
+
+.active {
+  background-color: #f3f5f8;
+}
+
+nav li:not(:last-child),
+nav > div a:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+nav li a,
+nav > div a {
+  display: block;
+  text-decoration: none;
+  color: #5f6165;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav li a:hover,
+nav > div a:hover {
+  background-color: #f3f5f8;
+}
+
+nav i {
+  margin-right: 5px;
+}
+
+nav > div {
+  margin-top: 80px;
+  position: sticky;
+  top: 80px;
+}
+
+@media (max-width: 767px) {
+  nav span,
+  nav a.logo h3 {
+    display: none;
+  }
+  nav > :nth-child(n) {
+    width: 32px;
+  }
+  nav {
+    padding: 22px 10px;
+  }
+}
+/* Styling The Navigation Side */
+
+/* ================================================================== */
+
+/* Styling The Dashboard Content */
+.content {
+  flex: 1;
+}
+
+/* Styling The Head */
+header {
+  padding: 16px 30px;
+  display: flex;
+  align-items: center;
+}
+
+header .search {
+  position: relative;
+}
+
+header .search i {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header input {
+  width: 230px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #f5f4f6;
+  border-radius: 6px;
+  padding-left: 35px;
+  font-size: 15px;
+  position: relative;
+  transition: 0.3s;
+}
+
+header input:focus {
+  caret-color: orange;
+  width: 330px;
+}
+
+header input:focus::placeholder {
+  color: transparent;
+}
+
+header .notify {
+  margin-left: auto;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+header .notify::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  right: 0px;
+  top: 1px;
+  border: 2px solid white;
+}
+
+header img {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  header input {
+    width: 230px;
+  }
+  header input:focus {
+    width: 270px;
+  }
+}
+/* Styling The Head */
+
+/* Styling The Dashboard Data */
+.data {
+  background-color: #f5f5f5;
+  padding: 30px;
+  min-height: calc(100% - 72px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.data .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.data .info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 265px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 15px;
+  justify-content: space-evenly;
+}
+.full-purple {
+  background-color: #a162f7;
+  color: white;
+}
+.pink,
+.purple,
+.yellow {
+  background-color: white;
+  color: #242731;
+}
+
+.data .info-card i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  font-size: 17px;
+}
+.full-purple i {
+  background-color: #a66ff0;
+}
+.pink i {
+  background-color: rgba(255, 126, 134, 0.1);
+  color: #ff7e86;
+}
+.purple i {
+  background-color: rgba(161, 98, 247, 0.1);
+  color: #a162f7;
+}
+.yellow i {
+  background-color: rgba(246, 204, 13, 0.1);
+  color: #f6cc0d;
+}
+
+@media (max-width: 767px) {
+  .data {
+    padding: 15px;
+    gap: 15px;
+  }
+  .data .cards {
+    gap: 15px;
+  }
+}
+
+/* Styling The Percentage Animation */
+.info-card .progress {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.info-card .progress .start,
+.info-card .progress .end,
+.info-card .progress .indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+.full-purple .progress .start,
+.full-purple .progress .indicator {
+  background-color: white;
+}
+.pink .progress .start,
+.pink .progress .indicator {
+  background-color: #ff7e86;
+}
+.purple .progress .start,
+.purple .progress .indicator {
+  background-color: #a162f7;
+}
+.yellow .progress .start,
+.yellow .progress .indicator {
+  background-color: #f6cc0d;
+}
+
+.info-card .progress .end {
+  transform: rotate(270deg);
+  transform-origin: 50% 50px;
+}
+.full-purple .progress .end {
+  background-color: #b37efc;
+}
+.pink .progress .end,
+.purple .progress .end,
+.yellow .progress .end {
+  background-color: #f4f5f9;
+}
+
+.info-card .progress .indicator {
+  transform-origin: 50% 50px;
+}
+
+.info-card .progress .circular-progress {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  transform: rotate(-135deg);
+}
+
+.info-card .progress .circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.full-purple .progress .circular-progress::before {
+  background-color: #a162f7;
+}
+.pink .progress .circular-progress::before,
+.purple .progress .circular-progress::before,
+.yellow .progress .circular-progress::before {
+  background-color: white;
+}
+
+.info-card .progress .progress-number {
+  /* position: absolute; */
+  font-size:18px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+/* Styling The Percentage Animation */
+
+/* Styling The Stats Section */
+.stats {
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.miles-stats,
+.car-stats {
+  background: white;
+  flex: 1;
+  border-radius: 15px;
+  padding: 15px 35px;
+}
+
+.miles-stats > span,
+.car-stats > span {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.miles-stats .details,
+.car-stats .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0 15px;
+}
+
+.miles-stats .details span:not(:last-child) {
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #5f6165;
+}
+
+#miles-stats {
+  width: 100%;
+}
+
+.car-stats .details div span {
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #5f6165;
+}
+
+.car-stats .details div {
+  background-color: #f5f4f6;
+  border-radius: 15px;
+  display: flex;
+}
+
+.miles-stats .details span.active {
+  background-color: #2884ff;
+  color: white;
+}
+
+.car-stats .details span.active {
+  background-color: #ff764c;
+  color: white;
+  border-radius: 15px;
+  margin-left: 0;
+}
+
+.miles-stats .details span:last-child {
+  font-weight: 700;
+  font-size: 17px;
+  color: #5f6165;
+  margin-left: auto;
+}
+
+.car-stats .details > span {
+  font-weight: 700;
+  font-size: 17px;
+  color: #5f6165;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .stats {
+    gap: 15px;
+  }
+}
+/* Styling The Stats Section */
+
+/* Styling The Recommended Section */
+.recommend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.recommend .product {
+  padding: 17px 28px;
+  border-radius: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.recommend .product:first-child {
+  background-color: #e1dfa4;
+}
+.recommend .product:nth-child(2) {
+  background-color: #e3ecf1;
+}
+.recommend .product:last-child {
+  background-color: #f4e3e5;
+}
+
+.recommend .product div {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.recommend .product i {
+  font-size: 25px;
+  color: #72767c;
+}
+
+.recommend .product i:first-of-type {
+  margin-right: 10px;
+}
+
+.recommend .product figure {
+  margin-top: auto;
+}
+
+.recommend .product figure img {
+  width: 250px;
+}
+
+.recommend .product figure figcaption {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.recommend .product .details {
+  color: #72767c;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.recommend .product .details img {
+  width: 16px;
+}
+
+.recommend .product .details i {
+  font-size: 15px;
+}
+
+.recommend .product .details :not(:last-child) {
+  margin-right: 17px;
+}
+
+.recommend .product .details :last-child {
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .recommend {
+    gap: 15px;
+  }
+  .recommend .product figure {
+    text-align: center;
+  }
+}
+/* Styling The Recommended Section */
+/* Styling The Dashboard Data */
+/* Styling The Dashboard Content */
+
+/* ================================================================== */
+
+/* Styling The Booking Content */
+.data .filter {
+  display: flex;
+  align-items: center;
+}
+
+.data .filter div {
+  padding: 10px 20px;
+  background-color: white;
+  width: 125px;
+  border-radius: 22px;
+  color: #5f6165;
+  position: relative;
+}
+
+.data .filter div:first-child {
+  margin-right: 16px;
+}
+
+.data .filter div span {
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #b4b4c6 #b4b4c6 transparent;
+  top: 46%;
+  right: 20px;
+  transform: translateY(-50%) rotate(45deg);
+  cursor: pointer;
+}
+
+.data .filter i {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.data .filter i:first-of-type {
+  color: #777e91;
+  margin-left: auto;
+  margin-right: 15px;
+  box-shadow: 0 4px 7px 0px #ddd;
+}
+
+.data .filter i:last-child {
+  color: white;
+  background-color: #a162f7;
+}
+
+/* Styling The Products Section */
+.content .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.content .products > div {
+  padding: 17px 28px;
+  border-radius: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #72767c;
+  position: relative;
+}
+
+.content .products > div > i {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  font-size: 18px;
+  color: #a4a5a6;
+  cursor: pointer;
+}
+
+.content .products > div > i.filled {
+  color: #f84f56;
+}
+
+.content .products > div h4 {
+  font-size: 18px;
+  margin-bottom: 3px;
+  color: black;
+}
+
+.content .products .car {
+  width: 160px;
+  margin: auto;
+}
+
+.content .products > div .details {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.content .products > div .details i {
+  color: #a162f7;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.content .products > div .details > span:first-child {
+  margin-right: 20px;
+}
+
+.content .products > div .details img {
+  width: 16px;
+  margin-right: 7px;
+}
+
+.content .products > div .details > :not(:last-child) {
+  margin-right: 10px;
+}
+
+.content .products > div .details div {
+  margin-left: auto;
+}
+
+.content .products > div .details div span {
+  font-weight: 500;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .data .filter div {
+    width: 100px;
+    padding: 10px 15px;
+  }
+  .data .filter div:first-child {
+    margin-right: 5px;
+  }
+  .data .filter div span {
+    right: 15px;
+  }
+  .data .filter i {
+    transform: scale(0.9);
+  }
+  .data .filter i:first-of-type {
+    margin-right: 0;
+  }
+  .content .products {
+    gap: 15px;
+  }
+  /* .content .products .car {
+    width: 160px;
+  } */
+}
+/* Styling The Products Section */
+/* Styling The Booking Content */
