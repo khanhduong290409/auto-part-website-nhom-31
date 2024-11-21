@@ -12,16 +12,20 @@
 	<meta name="msapplication-navbutton-color" content="#58595B" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
 	<!-- Meta tag end-->
-	<title>Home</title>
+  <title>Home</title>
 	<!-- Favicon start -->
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<!-- Favicon end -->
 	<!-- CSS and Bootstrap 4 links start -->
-	<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" href="css/product_page.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/feedback.css">
+
 	<!-- CSS and Bootstrap 4 links end -->
 </head>
 <body>
@@ -168,6 +172,51 @@
 			</div>
 		</header>
 		<!-- Header end -->
+    <div class="container-product">
+      <div class="row-product">
+        <div class="col-2">
+          <img src="img\items\dau-may-castrol-5w30.jpg" id="emphasisPicture">
+          <div class="smallImg">
+            <div class="col-4">
+              <img src="img\items\dau-may-castrol-5w30.jpg" class="smallpictures active" alt="">
+            </div>
+            <div class="col-4">
+              <img src="img\items\dau-may-mobil-1.jpg" class="smallpictures" alt="">
+            </div>
+            <div class="col-4">
+              <img src="img\items\dau-tong-hop.jpg" class="smallpictures" alt="">
+            </div>
+            <div class="col-4">
+              <img src="img\items\SNCF-5W30.jpg" class="smallpictures" alt="">
+            </div>
+          </div>
+          <div class="carousel mobile" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev"> <img
+                src="./images/icon-previous.svg"></button>
+            <button class="carousel-button next" data-carousel-button="next"> <img src="./images/icon-next.svg"></button>
+            <ul data-slides>
+              <li class="slide" data-active><img src="img/items/item-1.jpg"> </li>
+              <li class="slide"><img src="img/items/item-2.jpg"></li>
+              <li class="slide"><img src="img/items/item-3.jpg"></li>
+              <li class="slide"><img src="img/items/item-4.jpg1"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+      
+    
+			<!-- Top items end -->
+    <script src = "main.js"></script>
+    <script src="jq/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.min.js"></script>
+    <script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+    <script src="feedback.js"></script>
+     
 
 </body>
+</html>

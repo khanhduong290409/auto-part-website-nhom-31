@@ -5,7 +5,7 @@
 	width: 0;
 	height: 100%;
 	z-index: 9999;
-	background-color: #37424B;
+	background-color: #092330;
 	overflow-x: auto;
 	transition: all .3s linear;
 	-webkit-box-shadow: -5px 0px 30px -10px rgba(0, 0, 0, 0.75);
@@ -66,6 +66,7 @@
 }
 
 #mySidenav.sidenav ul li a.active:before {
+	content: '///';
 	margin-right: 5px;
 	color: #00AFE5;
 }
@@ -120,14 +121,15 @@
 }
 
 header {
-	background-color: #37424B;
+	background: rgb(34,142,195);
+    background: linear-gradient(0deg, rgba(34,142,195,1) 0%, rgba(13,25,73,1) 48%);
 	height: 110px;
 	box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
 }
 
 header .logo {
 	margin: 10px 5px 0;
-	width: 140px;
+	width: 95px;
 }
 
 header .search-input .input-group {
@@ -263,6 +265,7 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
 }
 
 header .navbar .navbar-nav .nav-item .nav-link.active:before {
+	content: '///';
 	margin-right: 5px;
 }
 
@@ -364,7 +367,7 @@ header #btn-navbarSearch {
 }
 
 #modal #username {
-	background: #FFFFFF url('../img/icon/user-login.png') 3% center no-repeat;
+	background: #FFFFFF url('/icon/user-login.png') 3% center no-repeat;
 	background-size: 22px 22px;
 	background-color: #FFFFFF;
 }
@@ -374,7 +377,7 @@ header #btn-navbarSearch {
 }
 
 #modal #password {
-	background: #FFFFFF url('../img/icon/password-login.png') 3% center no-repeat;
+	background: #FFFFFF url('') 3% center no-repeat;
 	background-size: 22px 22px;
 }
 
@@ -434,7 +437,7 @@ header #btn-navbarSearch {
 }
 
 #modal .form-check-label input:checked + span {
-	background: url('../img/icon/check.svg') center center no-repeat;
+	background: url('\car-parts-master\img\icon\check.svg') center center no-repeat;
 	background-size: 12px 12px;
 	background-color: #FFFFFF;
 }
@@ -659,7 +662,6 @@ header #btn-navbarSearch {
 
 footer {
 	padding-top: 30px;
-	padding-bottom: 20px;
 	color: #FFFFFF;
 	border-top: 3px solid #00AFEF;
 	background-color: #37424B;
@@ -684,6 +686,7 @@ footer h5 {
 }
 
 footer h5:before {
+	content: '///';
 	margin-right: 5px;
 	color: #00AFEF;
 }

@@ -35,6 +35,42 @@ a {
 	text-decoration: none!important;
 }
 
+#pop-up {
+	background: url('../img/pop-up/pop-up.jpg') center center no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9998;
+	width: 800px;
+	height: 500px;
+	height: 500px;
+	display: none;
+	-webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.75);
+}
+
+#pop-up #btn-close {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	line-height: 1;
+	padding: 0;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-shadow: none;
+	font-size: 35px;
+}
+
+#pop-up #btn-close:hover {
+	transition: .3s;
+	opacity: 0.6;
+	color: #000000;
+}
+
 #dropdown-hover {
 	top: -34px;
 }
@@ -113,6 +149,7 @@ a {
 }
 
 #top-parts .item h4:before {
+	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }
@@ -342,6 +379,7 @@ a {
 }
 
 #top-brands .item h4:before {
+	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }
@@ -383,6 +421,7 @@ a {
 }
 
 #all-brands .item h4:before {
+	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }
@@ -445,6 +484,7 @@ a {
 }
 
 #top-makers .item h4:before {
+	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }
@@ -455,7 +495,7 @@ a {
 	left: 50%;
 	width: 80%;
 	transform: translate(-50%, -50%);
-	padding: 	;
+	padding: 10px;
 }
 
 #top-makers .makers-logo img {
@@ -607,7 +647,6 @@ a {
 		left: 20%;
 	}
 }
-
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	#pop-up {
