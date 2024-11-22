@@ -149,7 +149,6 @@ a {
 }
 
 #top-parts .item h4:before {
-	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }
@@ -379,7 +378,6 @@ a {
 }
 
 #top-brands .item h4:before {
-	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }
@@ -421,7 +419,6 @@ a {
 }
 
 #all-brands .item h4:before {
-	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }
@@ -484,7 +481,6 @@ a {
 }
 
 #top-makers .item h4:before {
-	content: '/';
 	margin-right: 5px;
 	color: #00AFEF;
 }

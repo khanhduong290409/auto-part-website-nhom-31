@@ -66,7 +66,6 @@
 }
 
 #mySidenav.sidenav ul li a.active:before {
-	content: '///';
 	margin-right: 5px;
 	color: #00AFE5;
 }
@@ -265,7 +264,6 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
 }
 
 header .navbar .navbar-nav .nav-item .nav-link.active:before {
-	content: '///';
 	margin-right: 5px;
 }
 
@@ -278,7 +276,6 @@ header #search-input .input-group:before {
 	border-color: #0000 #0000 #f2f3f5;
 	border-style: solid;
 	border-width: 0 9px 10px;
-	content: "";
 	height: 0;
 	right: 40px;
 	position: absolute;
@@ -686,7 +683,6 @@ footer h5 {
 }
 
 footer h5:before {
-	content: '///';
 	margin-right: 5px;
 	color: #00AFEF;
 }
