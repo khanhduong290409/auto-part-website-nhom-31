@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="css/registration.css" />
 	<!-- CSS and Bootstrap 4 link start end -->
 </head>
+
 <body>
 	<!-- Sidenav start -->
 	<div id="mySidenav" class="sidenav">
@@ -38,7 +39,6 @@
 					<li><a href="product.html">Hệ Thống Lọc</a></li> 
 					<li><a href="product.html">Động Cơ</a></li> 
 					<li><a href="product.html">Hệ Thống Điều Hòa</a></li> 
-					<li><a href="product.html">Wheel<span>Bearings</span></a></li>
 				</ul>
 			</li>
 			<li><a href="about-us.html">Giới thiệu</a></li>
@@ -63,7 +63,7 @@
 		</div>
 	</div>
 	<!-- Sidenav end -->
-<!-- Header start -->
+	<!-- Header start -->
 	<header>
 		<div class="container">
 			<div class="row no-gutters">
@@ -167,7 +167,7 @@
 		</div>
 	</header>
 	<!-- Header end -->
-	 <!-- Breadcrumb start -->
+	<!-- Breadcrumb start -->
 	<nav aria-label="breadcrumb">
 		<div class="container">
 			<ol class="breadcrumb">
@@ -179,7 +179,7 @@
 	<!-- Breadcrumb end -->
 	<!-- Content start -->
 	<div id="content">
-	<!-- login form start -->
+		<!-- login form start -->
 		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
@@ -223,199 +223,203 @@
 				</div>
 			</div>
 		</div>
-	<!-- login form end -->
-	<div class="container">
-		<span id="sidenav" class="d-md-none" onclick="openNav()"></span>
-	<!-- Cart start -->
-	<div id="cart">
-		<div class="item-inCart">
-			<div class="row align-items-center p-4">
-				<div id="item" class="col-lg-8">
-					<div class="row align-items-center">
-						<div class="col-lg-5 text-center">
-							<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
-							<p class="name"> Nhớt động cơ Diesel cao cấp</p>
-							<span class="fas fa-star checked"></span>
-							<span class="fas fa-star checked"></span>
-							<span class="fas fa-star checked"></span>
-							<span class="fas fa-star checked"></span>
-							<span class="fas fa-star checked"></span>
-							<div class="review">(154 reviews) | #10W-40 API CI-4/SL</div>
+		<!-- login form end -->
+		<div class="container">
+			<span id="sidenav" class="d-md-none" onclick="openNav()"></span>
+			<!-- Cart start -->
+			<div id="cart">
+				<div class="item-inCart">
+					<div class="row align-items-center p-4">
+						<div id="item" class="col-lg-8">
+							<div class="row align-items-center">
+								<div class="col-lg-5 text-center">
+									<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
+									<p class="name"><b>Wearever</b> Unloaded Caliper - Domestic</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<div class="review">(154 reviews) | #18-B4728</div>
+								</div>
+								<div class="col-lg-4 add-toCart text-center">
+									<p class="text-uppercase font-weight-bold text-success"><img src="img/icon/check.png" class="icon" alt="img/icon/check.png" />Thêm vào giỏ hàng</p>
+									<p class="text-uppercase font-weight-bold">Card subtotal <span class="font-weight-normal">1 (Sản phẩm)</span></p>
+								</div>
+								<div class="col-lg-3 text-center price">
+									<p class="text-uppercase font-weight-bold text-danger">$63.99</p>
+								</div>
+							</div>
 						</div>
-						<div class="col-lg-4 add-toCart text-center">
-							<p class="text-uppercase font-weight-bold text-success"><img src="img/icon/check.png" class="icon" alt="img/icon/check.png" />Đã thêm vào giỏ hàng</p>
-							<p class="text-uppercase font-weight-bold">Giỏ hàng tạm tính <span class="font-weight-normal">1 (Sản phẩm)</span></p>
-						</div>
-						<div class="col-lg-3 text-center price">
-							<p class="text-uppercase font-weight-bold text-danger">630.000 VNĐ</p>
+						<div class="col-lg-4">
+							<div class="row align-items-center">
+								<div class="col-3 text-right col-sm-2 text-sm-center text-md-right col-lg-4">
+									<button id="btn-removeItem" class="btn btn-danger text-uppercase font-weight-bold" title="Remove item" type="button">&times;</button>
+								</div>
+								<div class="col-9 col-sm-6 offset-sm-2 col-md-6 offset-lg-0 col-lg-8 text-center">
+									<button id="btn-checkout" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='cart.html'">Proceed to checkout</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row align-items-center">
-						<div class="col-3 text-right col-sm-2 text-sm-center text-md-right col-lg-4">
-							<button id="btn-removeItem" class="btn btn-danger text-uppercase font-weight-bold" title="Remove item" type="button">&times;</button>
-						</div>
-						<div class="col-9 col-sm-6 offset-sm-2 col-md-6 offset-lg-0 col-lg-8 text-center">
-							<button id="btn-checkout" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='cart.html'">Thanh toán</button>
-						</div>
-					</div>
+					<button id="btn-closeCart" class="btn" title="Close" type="button">&times;</button>
 				</div>
 			</div>
-			<button id="btn-closeCart" class="btn" title="Close" type="button">&times;</button>
-		</div>
-	</div>
-	<!-- Cart end -->
-	 <!-- Dropdown start -->
-	 <div id="dropdown-hover" class="d-none d-md-block">
-		<div class="row no-gutters">
-			<div class="col-md-8">
-				<h3>Phụ Tùng Phổ Biến</h3>
+			<!-- Cart end -->
+			<!-- Dropdown start -->
+			<div id="dropdown-hover" class="d-none d-md-block">
 				<div class="row no-gutters">
-					<div class="col-md-6">
-						<h6>Hệ Thống Phanh</h6>
-						<ul>
-							<li><a>Má phanh</a></li>
-							<li><a>Đĩa phanh</a></li>
-							<li><a>Hệ thống ABS</a></li>
-							<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
-						</ul>
-						<h6>Hệ Thống Cảm Biến</h6>
-						<ul>
-							<li><a>Cảm biến túi khí</a></li>
-							<li><a>Cảm biến hộp số</a></li>
-							<li><a>Cảm biến ngắt lạnh</a></li>
-							<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
-						</ul>
-						<h6>Hệ Thống Làm Mát</h6>
-						<ul>
-							<li><a>Bơm nước động cơ</a></li>
-							<li><a>Két nước</a></li>
-							<li><a>Van hằng nhiệt</a></li>
-							<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
-						</ul>
-					</div>
-					<div class="col-md-6 second">
-						<h6>Hệ Thống Phân Phối Khí</h6>
-						<ul>
-							<li><a>Trục cò mổ</a></li>
-							<li><a>Trục cam</a></li>
-							<li><a>Giá đỡ giàn cam</a></li>
-							<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
-						</ul>
-						<h6>Hệ Thống Nhiên Liệu</h6>
-						<ul>
-							<li><a>Van nhiên liệu</a></li>
-							<li><a>Mô tơ bơm xăng</a></li>
-							<li><a>Cục bơm xăng</a></li>
-							<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
-						</ul>
-						<h6>Hệ Thống Đèn</h6>
-						<ul>
-							<li><a>Đèn xi nhan</a></li>
-							<li><a>Đèn pha</a></li>
-							<li><a>Đèn hậu</a></li>
-							<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
-						</ul>
-					</div>
-					<div class="col-10">
-						<div class="row no-gutters align-items-center offer">
-							<div class="col-md-7">
-								<h5 class="text-uppercase m-0">Kiểm tra hệ thống khởi động và sạc miễn phí</h5>
+					<div class="col-md-8">
+						<h3>Phụ Tùng Phổ Biến</h3>
+						<div class="row no-gutters">
+							<div class="col-md-6">
+								<h6>Hệ Thống Phanh</h6>
+								<ul>
+									<li><a>Má phanh</a></li>
+									<li><a>Đĩa phanh</a></li>
+									<li><a>Hệ thống ABS</a></li>
+									<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Hệ Thống Cảm Biến</h6>
+								<ul>
+									<li><a>Cảm biến túi khí</a></li>
+									<li><a>Cảm biến hộp số</a></li>
+									<li><a>Cảm biến ngắt lạnh</a></li>
+									<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Hệ Thống Làm Mát</h6>
+								<ul>
+									<li><a>Bơm nước động cơ</a></li>
+									<li><a>Két nước</a></li>
+									<li><a>Van hằng nhiệt</a></li>
+									<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
+								</ul>
 							</div>
-							<div class="col-md-5">
-								<img src="img/offer.png" alt="img/offer.png" />
-								<button id="btn-learn" class="btn btn-warning text-uppercase" type="button">Xem thêm<i class="fas fa-caret-right ml-2"></i></button>
+							<div class="col-md-6 second">
+								<h6>Hệ Thống Phân Phối Khí</h6>
+								<ul>
+									<li><a>Trục cò mổ</a></li>
+									<li><a>Trục cam</a></li>
+									<li><a>Giá đỡ giàn cam</a></li>
+									<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Hệ Thống Nhiên Liệu</h6>
+								<ul>
+									<li><a>Van nhiên liệu</a></li>
+									<li><a>Mô tơ bơm xăng</a></li>
+									<li><a>Cục bơm xăng</a></li>
+									<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Hệ Thống Đèn</h6>
+								<ul>
+									<li><a>Đèn xi nhan</a></li>
+									<li><a>Đèn pha</a></li>
+									<li><a>Đèn hậu</a></li>
+									<li><a class="see-more">Xem thêm <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-10">
+								<div class="row no-gutters align-items-center offer">
+									<div class="col-md-7">
+										<h5 class="text-uppercase m-0">Kiểm tra hệ thống khởi động và sạc miễn phí</h5>
+									</div>
+									<div class="col-md-5">
+										<img src="img/offer.png" alt="img/offer.png" />
+										<button id="btn-learn" class="btn btn-warning text-uppercase" type="button">Xem thêm<i class="fas fa-caret-right ml-2"></i></button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="col-md-4 all-categories">
+						<h4>Danh Mục Phụ Tùng</h4>
+						<ul>
+							<li><a>Má Phanh</a></li>
+							<li><a>Đĩa Phanh</a></li>
+							<li><a>ABS</a></li>
+							<li><a>Cảm Biến Túi Khí</a></li>
+							<li><a>Cảm Biến Hộp Số</a></li>
+							<li><a>Cảm Biến Ngắt Lạnh</a></li>
+							<li><a>Bơm Nước Động Cơ</a></li>
+							<li><a>Két Nước</a></li>
+							<li><a>Van Hằng Nhiệt</a></li>
+							<li><a>Trục Cò Mổ</a></li>
+							<li><a>Trục Cam</a></li>
+							<li><a>Giá Đỡ Giàn Cam</a></li>
+							<li><a>Van Nhiên Liệu</a></li>
+							<li><a>Mô Tơ Bơm Xăng</a></li>
+							<li><a>Cục Bơm Xăng</a></li>
+							<li><a>Đèn Xi Nhan</a></li>
+							<li><a>Đèn Pha</a></li>
+							<li><a>Đèn Hậu</a></li>
+							<li><a>Công Tắc Khởi Động</a></li>
+							<li><a>Bánh Răng Điền</a></li>
+							<li><a>Bơm Cao Áp</a></li>
+							<li><a>Hệ Thống Lau Kính</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-4 all-categories">
-				<h4>Danh Mục Phụ Tùng</h4>
-				<ul>
-					<li><a>Má Phanh</a></li>
-					<li><a>Đĩa Phanh</a></li>
-					<li><a>ABS</a></li>
-					<li><a>Cảm Biến Túi Khí</a></li>
-					<li><a>Cảm Biến Hộp Số</a></li>
-					<li><a>Cảm Biến Ngắt Lạnh</a></li>
-					<li><a>Bơm Nước Động Cơ</a></li>
-					<li><a>Két Nước</a></li>
-					<li><a>Van Hằng Nhiệt</a></li>
-					<li><a>Trục Cò Mổ</a></li>
-					<li><a>Trục Cam</a></li>
-					<li><a>Giá Đỡ Giàn Cam</a></li>
-					<li><a>Van Nhiên Liệu</a></li>
-					<li><a>Mô Tơ Bơm Xăng</a></li>
-					<li><a>Cục Bơm Xăng</a></li>
-					<li><a>Đèn Xi Nhan</a></li>
-					<li><a>Đèn Pha</a></li>
-					<li><a>Đèn Hậu</a></li>
-					<li><a>Công Tắc Khởi Động</a></li>
-					<li><a>Bánh Răng Điền</a></li>
-					<li><a>Bơm Cao Áp</a></li>
-					<li><a>Hệ Thống Lau Kính</a></li>
-				</ul>
+			<!-- Dropdown end -->
+			<!-- Registration form start -->
+			<div id="registration">
+				<form action="">
+					<div class="row justify-content-center">
+						<div class="col-md-4 login">
+							<h4>Đăng ký tài khoản mới</h4>
+							<div class="form-group">
+								<label class="email"><b>Tên tài khoản hoặc địa chỉ Email</b> * </label>
+								<input type="email" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label><b>Mật khẩu</b> * </label>
+								<input type="password" class="form-control" placeholder="Mật khẩu phải có độ dài ít nhất 4 ký tự" required />
+								<div class="password-meter-bar"></div>
+							</div>
+							<div class="form-group">
+								<label><b>Nhập lại mật khẩu</b> * </label>
+								<input type="password" class="form-control" required />
+							</div>
+						</div>
+						<div class="col-md-4 offset-md-2 address">
+							<h4>Thông tin cá nhân</h4>
+							<div class="form-group">
+								<label><b>Tên</b> * </label>
+								<input type="text" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label><b>Họ</b> * </label>
+								<input type="text" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<div class="col-lg-6 p-0">
+									<label><b>Giới tính</b> * </label>
+									<select class="custom-select arrow" name="reason" required>
+									<option selected value="">-</option>
+									<option value="1">Nam</option>
+									<option value="2">Nữ</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label><b>Số điện thoại</b> * </label>
+								<input type="number" class="form-control" required />
+							</div>
+							<div> 
+								<p>Thông tin cá nhân của bạn sẽ được sử dụng để tăng cường trải nghiệm sử dụng website, để quản lý truy cập vào tài khoản của bạn, và cho các mục đích cụ thể khác được mô tả trong <a href="about-us.html">chính sách riêng tư</a> của chúng tôi</p>
+							</div>
+							<div class="text-right">
+								<button id="btn-registration" class="btn btn-primary" type="submit">Đăng ký</button>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
+			<!-- Registration form end -->
 		</div>
 	</div>
-	<!-- Dropdown end -->
-	<!-- Registration form start -->
-	<div id="registration">
-		<form action="">
-			<div class="row justify-content-center">
-				<div class="col-md-4 login">
-					<h4>Đăng ký tài khoản mới</h4>
-					<div class="form-group">
-						<label class="email"><b>Tên tài khoản hoặc địa chỉ Email</b> * </label>
-						<input type="email" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label><b>Mật khẩu</b> * </label>
-						<input type="password" class="form-control" placeholder="Mật khẩu phải có độ dài ít nhất 4 ký tự" required />
-						<div class="password-meter-bar"></div>
-					</div>
-					<div class="form-group">
-						<label><b>Nhập lại mật khẩu</b> * </label>
-						<input type="password" class="form-control" required />
-					</div>
-				</div>
-				<div class="col-md-4 offset-md-2 address">
-					<h4>Thông tin cá nhân</h4>
-					<div class="form-group">
-						<label><b>Tên</b> * </label>
-						<input type="text" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label><b>Họ</b> * </label>
-						<input type="text" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<div class="col-lg-6 p-0">
-							<label><b>Giới tính</b> * </label>
-							<select class="custom-select arrow" name="reason" required>
-							<option selected value="">-</option>
-							<option value="1">Nam</option>
-							<option value="2">Nữ</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-						<label><b>Số điện thoại</b> * </label>
-						<input type="number" class="form-control" required />
-					</div>
-					<div> 
-						<p>Thông tin cá nhân của bạn sẽ được sử dụng để tăng cường trải nghiệm sử dụng website, để quản lý truy cập vào tài khoản của bạn, và cho các mục đích cụ thể khác được mô tả trong <a href="about-us.html">chính sách riêng tư</a> của chúng tôi</p>
-					</div>
-					<div class="text-right">
-						<button id="btn-registration" class="btn btn-primary" type="submit">Đăng ký</button>
-					</div>
-				</div>
-			</div>
-		</form>
-	</div>
-	<!-- Registration form end -->
+	<!-- Content end -->
+	<!-- Footer start -->
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -470,7 +474,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-lg-3"></div>
+				<div class="col-sm-6 col-lg-3">
 					<h5>Giờ làm việc</h5>
 					<p class="font-weight-bold">Văn phòng</p>
 					<p>Thứ 2 - Thứ 6
@@ -507,6 +511,16 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Footer end -->
+	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<script src="jq/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- JavaScript links end -->
 </body>
 
 </html>
