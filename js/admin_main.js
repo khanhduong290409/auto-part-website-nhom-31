@@ -7,7 +7,7 @@ let energyProgressNumber = document.querySelector(
 );
 let revenueDisplay = document.querySelector(".full-purple .progress-number");
 let revenueAmount = 50000000; // Doanh thu thực tế tháng này
-revenueDisplay.innerHTML = `${revenueAmount.toLocaleString()} VND`;
+revenueDisplay.innerHTML = `${revenueAmount.toLocaleString()} Đ`;
 
 // Sản phẩm đã bán
 let salesDisplay = document.querySelector(".pink .progress-number");

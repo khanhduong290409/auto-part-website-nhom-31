@@ -120,9 +120,10 @@
 }
 
 header {
-	background: rgb(34,142,195);
-    background: linear-gradient(0deg, rgba(34,142,195,1) 0%, rgba(13,25,73,1) 48%);
-	height: 110px;
+
+	background: rgb(30,32,33);
+    background: linear-gradient(0deg, rgba(30,32,33,1) 0%, rgba(85,86,94,1) 48%);
+	height: 105px;
 	box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
 }
 
@@ -172,16 +173,24 @@ header .registration li {
 	margin-right: 15px;
 }
 
+
 header .registration li:last-child {
-	margin-right: 0;
+	/* margin-right: 0; */
+	margin-top:3px;
 }
 
 header .registration li a {
 	color: #FFFFFF;
+	padding-right: 12px;
 }
 
 header .registration li a span:hover {
 	text-decoration: underline!important;
+	color: rgb(242, 218, 6);
+}
+header .registration li a:hover {
+	color: rgb(242, 218, 6);
+
 }
 
 header #user-dropdown {
@@ -205,7 +214,7 @@ header #user-dropdown li {
 }
 
 header #user-dropdown li a:hover {
-	color: #00afe5;
+	color: rgb(242, 218, 6);
 }
 
 header .registration .social a {
@@ -228,14 +237,14 @@ header .registration .social img {
 
 header .navbar {
 	float: right;
-	margin-top: 25px;
+	margin-top: 5px;
 	padding: 0;
 }
 
 header .navbar .navbar-nav {
 	display: block;
 	margin: 0;
-	padding: 0;
+	padding-bottom: 15px;
 }
 
 header .navbar .navbar-nav .nav-item {
@@ -251,7 +260,7 @@ header .navbar .navbar-nav .nav-item .nav-link {
 }
 
 header .navbar .navbar-nav .nav-item .nav-link:hover {
-	color: #00AFEF;
+	color: rgb(242, 218, 6);
 	transition: all .3s ease;
 }
 
@@ -299,6 +308,7 @@ header #btn-navbarSearch {
 	border: none;
 	color: #000000;
 }
+/* img background */
 
 #modal {
 	z-index: 9999;
@@ -320,6 +330,7 @@ header #btn-navbarSearch {
 	font-size: 35px;
 	text-shadow: none;
 }
+
 
 #modal .modal-content {
 	border: none;

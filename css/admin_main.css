@@ -531,7 +531,7 @@ header img {
   position: relative;
 }
 
-.data .filter div:first-child {
+.data .filter div {
   margin-right: 16px;
 }
 
@@ -643,6 +643,7 @@ header img {
 .content .products > div .details div span {
   font-weight: 500;
   color: black;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {
